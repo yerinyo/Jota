@@ -21,7 +21,7 @@ public class EditPage extends AppCompatActivity implements View.OnClickListener{
     private ImageSwitcher btnphoto;
     private ImageButton btndone;
     private EditText school, department;
-    private TextView id, warning, hi;
+    private TextView id, warning, hi1;
     private Intent intent;
 
 
