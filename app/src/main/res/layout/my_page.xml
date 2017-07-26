@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.yerin.myapplication.MyPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#e1dfd8" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Profile"
+            android:textSize="30dp"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:background="#ffe49b"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="150dp"
+        android:layout_width="200dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="School :"
+            android:id="@+id/school"
+            android:paddingTop="50dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/department"
+            android:text="Department :"
+            android:layout_below="@+id/school"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id"
+            android:layout_below="@+id/department"
+            android:text="ID :" />
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/warning"
+            android:layout_below="@+id/id"
+            android:text="Warning :" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="150dp">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:text="Name"
+            android:id="@+id/name"
+            android:textSize="20dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="12dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:src="@drawable/face"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@+id/name"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="#9b9a95"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#9b9a95"
+            android:text="Edit"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:id="@+id/btn_edit" />
+
+    </LinearLayout>
+
+</RelativeLayout>
